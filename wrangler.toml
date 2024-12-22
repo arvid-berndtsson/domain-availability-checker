@@ -7,5 +7,5 @@ compatibility_flags = ["nodejs_compat"]
 [observability]
 enabled = true
 
-[[triggers.crons]]
-schedule = "0 10 * * *" # Runs every day at 10 AM UTC
+[triggers]
+crons = ["0 */3 * * *"]

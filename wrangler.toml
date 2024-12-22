@@ -1,0 +1,11 @@
+#:schema node_modules/wrangler/config-schema.json
+name = "godaddy-checker"
+main = "src/index.ts"
+compatibility_date = "2024-12-18"
+compatibility_flags = ["nodejs_compat"]
+
+[observability]
+enabled = true
+
+[[triggers.crons]]
+schedule = "0 10 * * *" # Runs every day at 10 AM UTC

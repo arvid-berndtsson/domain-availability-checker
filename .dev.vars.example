@@ -1,2 +1,5 @@
 # --- Discord ---
 DISCORD_WEBHOOK_URL="change_me"
+
+# --- Domain List ---
+DOMAINS="example.com,example.net,example.org"

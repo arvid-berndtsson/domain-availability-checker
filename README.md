@@ -1,4 +1,6 @@
-# Godaddy Domain Checker
+# Domain Availability Checker
+
+This is a simple Cloudflare Worker that checks the availability of a list of domains, using Google RDAP.
 
 ## Setup
 
@@ -10,11 +12,13 @@
 ## Environment Variables
 
 - `DISCORD_WEBHOOK_URL`: The URL of the Discord webhook.
+- `DOMAINS`: A comma-separated list of domains to check.
 
 Set the variable in the worker's environment variables. Use the `wrangler secret put` command to set the secret.
 
 ```bash
 wrangler secret put DISCORD_WEBHOOK_URL
+wrangler secret put DOMAINS
 ```
 
 ### Local Environment Variables
@@ -23,6 +27,7 @@ Create a `.dev.vars` file in the root of the project and add the following varia
 
 ```bash
 DISCORD_WEBHOOK_URL=your_webhook_here
+DOMAINS="your_domains_here,your_domains_here,your_domains_here"
 ```
 
 ## DNS Response Codes

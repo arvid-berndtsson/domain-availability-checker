@@ -1,5 +1,5 @@
 {
-  "name": "godaddy-checker",
+  "name": "domain-availability-checker",
   "version": "0.0.0",
   "private": true,
   "scripts": {
